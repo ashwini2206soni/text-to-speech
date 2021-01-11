@@ -11,7 +11,7 @@ resource "google_storage_bucket" "bucket" {
 resource "google_storage_bucket_object" "archive" {
   name   = "index.zip"
   bucket = google_storage_bucket.bucket.name
-  source = "../cloud_function_code/function-source.zip"
+  source = "./cloud_function_code/function-source.zip"
 }
 
 resource "google_cloudfunctions_function" "function" {
