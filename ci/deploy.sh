@@ -9,6 +9,7 @@ echo "==> Init <=="
 terraform init \
     -input=false \
     -no-color \
+    -backend-config=backend.tfvars \
     ./terraform
 
 echo "==> Plan <=="
