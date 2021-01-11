@@ -1,0 +1,7 @@
+---
+    # repository and branch of the infrastructure code
+    git_repo_https: .......................
+    git_branch: master
+    # Terraform variables
+    gcp_credentials: ((credentials))
+    # for foundational code use 'default'
