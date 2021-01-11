@@ -8,7 +8,7 @@
         # tag: '0.12.29'
     inputs:
       - name: infrastructure-code
-      - name: terraform-modules
+
     run:
       dir: infrastructure-code
       path: /bin/sh
