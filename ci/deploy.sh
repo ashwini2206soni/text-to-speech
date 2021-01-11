@@ -3,13 +3,12 @@
 set -e
 
 # move concourse parameters into files for terraform consumption
-echo "${TF_PROVIDER_GCP_CREDENTIALS}" > credentials.json
+echo "${GCP_CREDENTIALS}" > credentials.json
 
 echo "==> Init <=="
 terraform init \
     -input=false \
     -no-color \
-    -backend-config=backend.tfvars \
     ./terraform
 
 echo "==> Plan <=="
