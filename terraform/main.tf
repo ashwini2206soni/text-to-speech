@@ -3,6 +3,7 @@ resource "google_storage_bucket" "bucket" {
 }
 
 resource "google_storage_bucket_object" "archive" {
+  depends_on = [ google_storage_bucket.bucket, ]
   name   = lookup(var.gcs_storage_object, "name", "")
   bucket = lookup(var.gcs_storage_object, "bucket", "")
   source = lookup(var.gcs_storage_object, "source", "")
