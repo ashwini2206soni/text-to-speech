@@ -4,3 +4,4 @@ unused
 .terraform
 *.tfstate*
 fly_set.sh
+*.lock*
