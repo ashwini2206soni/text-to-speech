@@ -15,6 +15,7 @@ echo "==> Plan <=="
 terraform plan \
     -out=main.tfplan \
     -input=false \
+    -var-file=terraform/default.tfvars \
     -no-color \
     ./terraform
 
